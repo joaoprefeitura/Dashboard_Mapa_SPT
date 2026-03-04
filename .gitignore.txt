@@ -1,0 +1,15 @@
+# Ambiente Virtual (O mais pesado)
+venv/
+.venv/
+env/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Arquivos do VS Code (opcional)
+.vscode/
+
+# Arquivos de dados pesados ou confidenciais (exemplo)
+*.xlsx
+.env
