@@ -56,16 +56,13 @@ if not df.empty:
         st.subheader("🗺️ Mapa Interativo")
         st.write("Clique em um marcador para carregar os dados.")
         
-        centro_lat = df['lat'].mean()
-        centro_lon = df['lon'].mean()
-        
+        # Cria o mapa base (não precisamos mais passar o 'location' nem 'zoom_start' aqui)
         m = folium.Map(
-            location=[centro_lat, centro_lon], 
-            zoom_start=14,
             tiles="https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
             attr="Google Satellite"
         )
         
+        # Adiciona os marcadores no mapa
         for idx, row in df.iterrows():
             folium.Marker(
                 location=[row['lat'], row['lon']],
@@ -73,11 +70,15 @@ if not df.empty:
                 icon=folium.Icon(color="red", icon="info-sign")
             ).add_to(m)
             
+        # ==========================================
+        # O TRUQUE PARA CENTRALIZAR AUTOMATICAMENTE:
+        # Pega a lista de todas as coordenadas [lat, lon]
+        limites = df[['lat', 'lon']].values.tolist()
+        # Manda o mapa se autoajustar para enquadrar todos os pontos
+        m.fit_bounds(limites)
+        # ==========================================
+            
         mapa_dados = st_folium(m, width=700, height=600)
-        
-        local_selecionado = None
-        if mapa_dados and mapa_dados.get("last_object_clicked_tooltip"):
-            local_selecionado = mapa_dados["last_object_clicked_tooltip"]
 
     with col2:
         st.subheader("📄 Detalhes e PDF")
