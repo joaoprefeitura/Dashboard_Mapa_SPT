@@ -1,10 +1,14 @@
 @echo off
-echo Iniciando o Dashboard...
+echo ===================================================
+echo Iniciando o Painel de Ensaios SPT de Matupa...
+echo Aguarde um momento, o navegador sera aberto em breve.
+echo ===================================================
 
-:: Vai para a pasta exata onde este arquivo .bat está, não importa o disco ou local
+:: 1. Garante que o CMD "entre" na pasta do projeto
 cd /d "%~dp0"
 
-:: Roda o Streamlit
-python -m streamlit run app_stream.py
+:: 2. Tenta rodar o Streamlit
+".\venv\Scripts\streamlit.exe" run app_stream.py
+
 
 pause
