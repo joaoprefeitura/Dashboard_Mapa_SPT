@@ -1,0 +1,19 @@
+﻿nome;lat;lng;pdf;comentario
+SP01_CentroSolos;-10,17868;-54,937464;CentroSolos_SP01.pdf;Primeiro ponto, defensoria.
+SP02_CentroSolos;-10,178824;-54,937555;CentroSolos_SP02.pdf;Segundo ponto, defensoria.
+SP03_CentroSolos;-10,178899;-54,937466;CentroSolos_SP03.pdf;Terceiro ponto, defensoria.
+SP04_CentroSolos;-10,172521;-54,918549;CentroSolos_SP04.pdf;Primeiro local de amostra.
+SP05_CentroSolos;-10,172534;-54,917968;CentroSolos_SP05.pdf;Segundo local de amostra.
+SP06_CentroSolos;-10,173006;-54,918423;CentroSolos_SP06.pdf;Terceiro local de amostra.
+SP07_CentroSolos;-10,173577;-54,916997;CentroSolos_SP07.pdf;Quarto local de amostra.
+SP08_CentroSolos;-10,173241;-54,917041;CentroSolos_SP08.pdf;Quinto local de amostra.
+SP01_Geoflora;-10,17805556;-54,93452778;Geoflora_SP01.pdf;Primeiro local de amostra.
+SP02_Geoflora;-10,17794444;-54,93461111;Geoflora_SP02.pdf;Segundo local de amostra.
+SP03_Geoflora;-10,17769444;-54,93488889;Geoflora_SP03.pdf;Terceiro local de amostra.
+SP04_Geoflora;-10,17777778;-54,93475;Geoflora_SP04.pdf;Quarto local de amostra.
+SP05_Geoflora;-10,1741333;-54,92160556;Geoflora_SP05.pdf;Coordenadas estimadas pelas fotos.
+SP06_Geoflora;-10,17405278;-54,92192778;Geoflora_SP06.pdf;Coordenadas estimadas pelas fotos.
+SP01_Angular;-10,17080833;-54,93145833;Angular_SP01.pdf;Primeiro local de amostra.
+SP02_Angular;-10,17083333;-54,93153333;Angular_SP02.pdf;Segundo local de amostra.
+SP01_EEJonas_Angular;-10,16529444;-54,21396944;Angular_EE_Jonas_SP_01.pdf;EE Jonas Pinheiro.
+SP02_EEJonas_Angular;-10,16556388;-54,21409166;Angular_EE_Jonas_SP_02.pdf;Coordenada corrigida via relatório.
